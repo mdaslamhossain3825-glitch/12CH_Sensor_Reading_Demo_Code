@@ -36,7 +36,7 @@ int Reference_ADC[sensorNumber];
 //PID Variables
 float line_position;
 float error;
-float center_position = 45;
+float center_position = 65;
 float derivative, previous_error;
 int base_speed = 150;
 int kp = 8;
