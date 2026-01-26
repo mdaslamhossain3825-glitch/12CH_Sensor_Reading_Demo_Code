@@ -186,6 +186,9 @@ void motor(int LPWM, int RPWM) {
     // Backward
     analogWrite(left_motor_forward, 0);
     analogWrite(left_motor_backward, -LPWM);
+  }else {
+    analogWrite(left_motor_forward, 0);
+    analogWrite(left_motor_backward, 0);
   }
 
   // ----- RIGHT MOTOR -----
@@ -197,6 +200,9 @@ void motor(int LPWM, int RPWM) {
     // Backward
     analogWrite(right_motor_forward, 0);
     analogWrite(right_motor_backward, -RPWM);
+  }else {
+    analogWrite(right_motor_forward, 0);
+    analogWrite(right_motor_backward, 0);
   }
 }
 void read_black_line() {
